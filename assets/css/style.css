@@ -1,4 +1,6 @@
 /* CSS BASE */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     background-color: #fff;
 }
@@ -13,6 +15,7 @@ body {
     border-radius: 10px;
     margin-top: 6px;
 }
+
 .btn-text {
     color: white;
 }
@@ -27,4 +30,20 @@ body {
 
 .social-media:hover {
     color: #112D4E;
+}
+
+.bg-progressbar {
+    background: #3F72AF;
+}
+
+.text-shadow {
+    text-shadow: 5px 4px 7px rgb(139, 139, 139);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-progressbar-alt {
+    background-color: #112D4E
 }
