@@ -1,0 +1,59 @@
+{
+    "Banner": "src/assets/img/Banner.jpg",
+    "Profile": [
+        {
+            "pic": "src/assets/svg/user.svg",
+            "Name": "",
+            "Title": ""
+        }
+    ],
+    "Aboutme": [
+        {
+            "Sobremi": "Sobre mi",
+            "Informacion": ""
+        }
+    ],
+    "Experiencia": [
+        {
+            "Logo": "",
+            "Puesto": "Titulo del puesto",
+            "Periodo": 2023,
+            "Tareas": [
+                {
+                    "tarea1": "",
+                    "tarea2": "",
+                    "tarea3": ""
+                }
+            ]
+        }
+    ],
+    "Educacion": [
+        {
+            "Logo": "",
+            "Instituto": "Titulo del proyecto",
+            "Periodo": 2023,
+            "Carrera/Titulo": "Carrera/Titulo"
+        }
+    ],
+    "Skills": [
+        {
+            "id": 1,
+            "Programa": "HTML",
+            "porcentaje": 75
+        }
+    ],
+    "Proyecto": [
+        {
+            "Logo": "",
+            "Proyecto": "Ir al gym",
+            "Periodo": 2022,
+            "Descripcion del proyecto": ""
+        },
+        {
+            "Logo": "",
+            "Proyecto": "Ir al gym",
+            "Periodo": 2022,
+            "Descripcion del proyecto": ""
+        }
+    ]
+}

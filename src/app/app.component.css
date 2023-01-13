@@ -1,16 +1,19 @@
 .bg-color {
     background-color: #DBE2EF;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
+
 .btn-bg {
     padding: 2px;
     background-color: #112D4E;
     border-radius: 10px;
     margin-top: 6px;
 }
+
 .btn-text {
     color: white;
 }
+
 .btn-text:hover {
     color: #9897ef;
 }
@@ -30,20 +33,26 @@
 }
 
 .social-media:hover {
-    color: #fff ;
+    color: #fff;
     background-color: #1a355f;
     font-size: 18px;
 }
 
 .bg-progressbar {
-    background:  #3F72AF;
+    background: #3F72AF;
 }
 
 .text-shadow {
     text-shadow: 5px 4px 7px rgb(139, 139, 139);
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: hsl(250%, 8%, 15%);
     font-family: 'Roboto', sans-serif;
 }
