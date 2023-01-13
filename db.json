@@ -1,18 +1,19 @@
 {
-    "Banner": "src/assets/img/Banner.jpg",
     "Profile": [
         {
+            "Banner": "src/assets/img/Banner.jpg",
             "pic": "src/assets/svg/user.svg",
             "Name": "",
-            "Title": ""
+            "Title": "",
+            "Aboutme": [
+                {
+                    "Sobremi": "Sobre mi",
+                    "Informacion": ""
+                }
+            ]
         }
     ],
-    "Aboutme": [
-        {
-            "Sobremi": "Sobre mi",
-            "Informacion": ""
-        }
-    ],
+    
     "Experiencia": [
         {
             "Logo": "",
