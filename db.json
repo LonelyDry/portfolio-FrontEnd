@@ -61,11 +61,18 @@
                         "id": 1,
                         "Logo": "./assets/svg/graduation-cap.svg",
                         "Titulo": "Instituto",
-                        "Periodo": 2023,
+                        "Periodo": 2021,
                         "Descripcion": "Carrera/Titulo"
                     },
                     {
                         "id": 2,
+                        "Logo": "./assets/svg/graduation-cap.svg",
+                        "Titulo": "Instituto",
+                        "Periodo": 2022,
+                        "Descripcion": "Carrera/Titulo"
+                    },
+                    {
+                        "id": 3,
                         "Logo": "./assets/svg/graduation-cap.svg",
                         "Titulo": "Instituto",
                         "Periodo": 2023,
@@ -82,7 +89,7 @@
                         "id": 1,
                         "Logo": "assets/svg/scenery.svg",
                         "Titulo": "Proyecto 1",
-                        "Periodo": 2022,
+                        "Periodo": 2021,
                         "Descripcion": "Descripcion del proyecto"
                     },
                     {
@@ -90,6 +97,13 @@
                         "Logo": "assets/svg/scenery.svg",
                         "Titulo": "Proyecto 2",
                         "Periodo": 2022,
+                        "Descripcion": "Descripcion del proyecto"
+                    },
+                    {
+                        "id": 3,
+                        "Logo": "assets/svg/scenery.svg",
+                        "Titulo": "Proyecto 2",
+                        "Periodo": 2023,
                         "Descripcion": "Descripcion del proyecto"
                     }
                 ]
