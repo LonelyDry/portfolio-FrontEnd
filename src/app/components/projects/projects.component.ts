@@ -18,8 +18,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.DataService.getTasks().subscribe((Portfolio) => (
-      this.data = Portfolio.projects[0]
+    this.DataService.getData().subscribe((data) => (
+      this.data = data.projects
     ));
 
   }

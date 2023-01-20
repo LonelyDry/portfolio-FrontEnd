@@ -1,18 +1,18 @@
 <!-- Skills -->
 <section>
     <div class="mt-3 container-lg">
-        <h1 class="text-shadow fs-1 fw-bold">{{data.Titulo}}</h1>
+        <h1 class="text-shadow fs-1 fw-bold">{{skills.titulo}}</h1>
     </div>
     <div class="container-lg bg-color pb-4 position-relative" >
-        <div class="row pt-4" *ngFor="let skill of data.information">
+        <div class="row pt-4" *ngFor="let skill of skills.information">
             <div class="col-md-4">
                 <div class="justify-content-center">
-                    <img [src]="skill.Logo" alt="" class="mx-auto d-block">
+                    <img [src]="skill.logo" alt="" class="mx-auto d-block">
                 </div>
             </div>
             <div class="col-md-7">
                 <h6 class="fw-bold">
-                    {{skill.Skill}}
+                    {{skill.skill}}
                 </h6>
                 <div class="progress rounded-pill bg-progressbar-alt">
                     <div class="progress-bar bg-progressbar rounded-pill" role="progressbar"

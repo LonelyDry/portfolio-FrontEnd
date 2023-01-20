@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs';
 
+
 const httpOptions = {
-  headers: new HttpHeaders ({
-    'Content-Type':'application/json'
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json'
   })
 }
 
@@ -12,13 +13,18 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = "http://localhost:5001/Portfolio"
+
+  private apiUrl = `http://localhost:5001/db`
+  
+
 
   constructor(
-    private http:HttpClient
+    private http: HttpClient
   ) { }
 
-  getTasks(): Observable<any> {
+  getData(): Observable<any> {
     return this.http.get<any>(this.apiUrl)
   }
+ 
+
 }

@@ -1,17 +1,11 @@
 <!-- Banner y About me -->
 <section>
     <div class="container-lg py-4">
-        <div class="position-relative">
-            <img [src]="data.banner" alt="" width="100%" height="auto">
-            <div class="position-absolute top-0 end-0 pt-2 pe-2">
-                <button type="button" class="btn edit-btn-bg rounded-circle btn-text"><i
-                        class="uil uil-pen"></i></button>
-            </div>
-        </div>
+        <app-banner></app-banner>
         <div class="row pt-4">
             <div class="col-md-4 pb-3">
                 <div class="position-relative">
-                    <img [src]="data.pic" alt="" width="150"
+                    <img [src]="profile.profilepic"alt="" width="150"
                         class="mx-auto d-block rounded-circle border border-light">
                     <div class="position-absolute top-0 end-0 pt-2 pe-2">
                         <button type="button" class="btn edit-btn-bg rounded-circle btn-text"><i
@@ -21,12 +15,12 @@
                 <div>
                     <div class="d-flex justify-content-center pt-3">
                         <h3 class="text-shadow  fw-bold">
-                            {{data.name}}
+                            {{profile.name}}
                         </h3>
                     </div>
                     <div class="d-flex justify-content-center">
                         <h3 class="text-shadow  fw-bold">
-                            {{data.title}}
+                            {{profile.title}}
                         </h3>
                     </div>
                 </div>
@@ -39,7 +33,7 @@
                 </div>
                 <div>
                     <p class="lh-base">
-                        {{data.sobremi}}
+                        {{profile.sobremi}}
                     </p>
                 </div>
                 <div class="pt-4">

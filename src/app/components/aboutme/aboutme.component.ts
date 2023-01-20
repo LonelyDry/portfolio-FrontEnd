@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../service/data.service'
-// import {  } from '../../interface'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-aboutme',
@@ -9,18 +9,23 @@ import { DataService } from '../../service/data.service'
 })
 export class AboutmeComponent implements OnInit {
 
-  data:any;
-  
-  constructor (
-    private DataService:DataService
-  ) {
+  profile: any;
 
+  constructor(
+    private DataService: DataService,
+  ) {
   }
 
   ngOnInit(): void {
-    this.DataService.getTasks().subscribe((Portfolio) => (
-      this.data = Portfolio.Profile[0]
+    this.DataService.getData().subscribe((data) => (
+      this.profile = data.profile
     ));
-    }
+  }
+
+
+
+
+
+
 
 }

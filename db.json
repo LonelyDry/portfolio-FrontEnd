@@ -1,112 +1,102 @@
 {
-    "Portfolio": {
-        "Profile": [
+    "banner": {
+        "img": "./assets/img/Banner.jpg"
+    },
+    "profile": {
+        "profilepic": "./assets/svg/user.svg",
+        "name": "Nombre y Apellido",
+        "title": "Titulo",
+        "sobremi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "experience": {
+        "titulo": "Experiencia",
+        "logo": "./assets/svg/briefcase-alt.svg",
+        "puesto": "Titulo del puesto",
+        "periodo": 2023,
+        "tareas": [
             {
-                "banner": "./assets/img/Banner.jpg",
-                "pic": "./assets/svg/user.svg",
-                "name": "Nombre y Apellido",
-                "title": "Titulo",
-                "sobremi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "tarea": "Tarea numero 1"
+            },
+            {
+                "tarea": "Tarea numero 2"
+            },
+            {
+                "tarea": "Tarea numero 3"
             }
-        ],
-        "experience": [
+        ]
+    },
+    "skills": {
+        "titulo": "Skills",
+        "information": [
             {
-                "Titulo": "Experiencia",
-                "Logo": "./assets/svg/briefcase-alt.svg",
-                "Puesto": "Titulo del puesto",
-                "Periodo": 2023,
-                "Tareas": [
-                    {
-                        "tarea": "Tarea numero 1"
-                    },
-                    {
-                        "tarea": "Tarea numero 2"
-                    },
-                    {
-                        "tarea": "Tarea numero 3"
-                    }
-                ]
+                "id": 1,
+                "logo": "./assets/img/icons/icons8-html-5-48.png",
+                "skill": "HTML",
+                "porcentaje": "75%"
+            },
+            {
+                "id": 2,
+                "logo": "./assets/img/icons/icons8-css3-48.png",
+                "skill": "CSS",
+                "porcentaje": "50%"
+            },
+            {
+                "id": 3,
+                "logo": "./assets/img/icons/icons8-bootstrap-logo-40.png",
+                "skill": "BOOTSTRAP",
+                "porcentaje": "25%"
             }
-        ],
-        "skills": [
+        ]
+    },
+    "education": {
+        "titulo": "Educación",
+        "information": [
             {
-                "Titulo": "Skills",
-                "information": [
-                    {
-                        "id": 1,
-                        "Logo": "./assets/img/icons/icons8-html-5-48.png",
-                        "Skill": "HTML",
-                        "porcentaje": "75%"
-                    },
-                    {
-                        "id": 2,
-                        "Logo": "./assets/img/icons/icons8-css3-48.png",
-                        "Skill": "CSS",
-                        "porcentaje": "50%"
-                    },
-                    {
-                        "id": 3,
-                        "Logo": "./assets/img/icons/icons8-bootstrap-logo-40.png",
-                        "Skill": "BOOTSTRAP",
-                        "porcentaje": "25%"
-                    }
-                ]
+                "id": 1,
+                "logo": "./assets/svg/graduation-cap.svg",
+                "titulo": "Instituto",
+                "periodo": 2021,
+                "descripcion": "Carrera/Titulo"
+            },
+            {
+                "id": 2,
+                "logo": "./assets/svg/graduation-cap.svg",
+                "titulo": "Instituto",
+                "periodo": 2022,
+                "descripcion": "Carrera/Titulo"
+            },
+            {
+                "id": 3,
+                "logo": "./assets/svg/graduation-cap.svg",
+                "titulo": "Instituto",
+                "periodo": 2023,
+                "descripcion": "Carrera/Titulo"
             }
-        ],
-        "education": [
+        ]
+    },
+    "projects": {
+        "titulo": "Proyectos",
+        "information": [
             {
-                "Titulo": "Educación",
-                "information": [
-                    {
-                        "id": 1,
-                        "Logo": "./assets/svg/graduation-cap.svg",
-                        "Titulo": "Instituto",
-                        "Periodo": 2021,
-                        "Descripcion": "Carrera/Titulo"
-                    },
-                    {
-                        "id": 2,
-                        "Logo": "./assets/svg/graduation-cap.svg",
-                        "Titulo": "Instituto",
-                        "Periodo": 2022,
-                        "Descripcion": "Carrera/Titulo"
-                    },
-                    {
-                        "id": 3,
-                        "Logo": "./assets/svg/graduation-cap.svg",
-                        "Titulo": "Instituto",
-                        "Periodo": 2023,
-                        "Descripcion": "Carrera/Titulo"
-                    }
-                ]
-            }
-        ],
-        "projects": [
+                "id": 1,
+                "logo": "assets/svg/scenery.svg",
+                "titulo": "Proyecto 1",
+                "periodo": 2021,
+                "descripcion": "Descripcion del proyecto"
+            },
             {
-                "Titulo": "Proyectos",
-                "information": [
-                    {
-                        "id": 1,
-                        "Logo": "assets/svg/scenery.svg",
-                        "Titulo": "Proyecto 1",
-                        "Periodo": 2021,
-                        "Descripcion": "Descripcion del proyecto"
-                    },
-                    {
-                        "id": 2,
-                        "Logo": "assets/svg/scenery.svg",
-                        "Titulo": "Proyecto 2",
-                        "Periodo": 2022,
-                        "Descripcion": "Descripcion del proyecto"
-                    },
-                    {
-                        "id": 3,
-                        "Logo": "assets/svg/scenery.svg",
-                        "Titulo": "Proyecto 2",
-                        "Periodo": 2023,
-                        "Descripcion": "Descripcion del proyecto"
-                    }
-                ]
+                "id": 2,
+                "logo": "assets/svg/scenery.svg",
+                "titulo": "Proyecto 2",
+                "periodo": 2022,
+                "descripcion": "Descripcion del proyecto"
+            },
+            {
+                "id": 3,
+                "logo": "assets/svg/scenery.svg",
+                "titulo": "Proyecto 2",
+                "periodo": 2023,
+                "descripcion": "Descripcion del proyecto"
             }
         ]
     }

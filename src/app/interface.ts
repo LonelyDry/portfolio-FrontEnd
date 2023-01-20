@@ -1,28 +1,40 @@
-export interface Portfolio {
+export interface profile {
 
-    id?: number;
-    Logo: string;
-    Titulo: string;
-    Periodo: number;
-    Descripcion: string;
-    /*Profile?: {
-        banner: string;
-        pic: string;
-        name: string;
-        title: string;
-        sobremi: string;
-    }*/
+    banner: string;
+    profilepic: string;
+    name: string;
+    title: string;
+    sobremi: string;
+
 }
-
 export interface experience {
-    Logo: string;
-    Puesto: string;
-    Periodo: number,
-    Tareas: string[]
+
+    logo: string;
+    puesto: string;
+    periodo: number,
+    tareas: [{
+        text: string
+    }]
+
 }
 
 export interface skills {
+
     id?: number;
-    Skill: string;
+    skill: string;
     porcentaje: number;
+
 }
+export interface information {
+
+
+    id?: number;
+    logo: string;
+    titulo: string;
+    periodo: number;
+    descripcion: string;
+
+
+}
+
+export interface Portfolio extends profile, experience, skills, information { }

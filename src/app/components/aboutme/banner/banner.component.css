@@ -1,0 +1,22 @@
+#fileInput {
+    display: none;
+}
+
+.btn-bg {
+    padding: 2px;
+    background-color: #112D4E;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.btn-text {
+    color: white;
+}
+
+.btn-text:hover {
+    color: #9897ef;
+}
+
+.edit-btn-bg {
+    background-color: #112D4E;
+}

@@ -1,22 +1,22 @@
 <!-- Experiencia -->
 <section>
     <div class="container-lg">
-        <h1 class="text-shadow fs-1 fw-bold">{{data.Titulo}}</h1>
+        <h1 class="text-shadow fs-1 fw-bold">{{experience.titulo}}</h1>
     </div>
     <div class="container-lg bg-color py-4 position-relative">
         <div class="row">
             <div class="col-md-4 mt-3">
                 <div class="justify-content-center">
-                    <img [src]="data.Logo" alt="" width="120" class="mx-auto d-block">
+                    <img [src]="experience.logo" alt="" width="120" class="mx-auto d-block">
                 </div>
             </div>
             <div class="col-md-8">
                 <h2 class="fw-bold">
-                    {{data.Puesto}}
+                    {{experience.puesto}}
                 </h2>
-                <h5 class="text-muted">{{data.Periodo}}</h5>
+                <h5 class="text-muted">{{experience.periodo}}</h5>
                 <ul>
-                    <li *ngFor="let task of data.Tareas">{{task.tarea}}</li>
+                    <li *ngFor="let task of experience.tareas">{{task.tarea}}</li>
                 </ul>
             </div>
         </div>

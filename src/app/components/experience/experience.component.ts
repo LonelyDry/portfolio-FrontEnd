@@ -8,7 +8,7 @@ import { DataService } from '../../service/data.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  data:any ;
+  experience:any ;
   
   constructor (
     private DataService:DataService
@@ -17,8 +17,8 @@ export class ExperienceComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.DataService.getTasks().subscribe((Portfolio) => (
-      this.data = Portfolio.experience[0]
+    this.DataService.getData().subscribe((data) => (
+      this.experience = data.experience
     ));
     }
 

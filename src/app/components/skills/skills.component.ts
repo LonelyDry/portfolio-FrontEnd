@@ -8,7 +8,7 @@ import { DataService } from '../../service/data.service';
 })
 export class SkillsComponent implements OnInit {
 
-  data:any ;
+  skills:any ;
   
   constructor (
     private DataService:DataService
@@ -17,8 +17,8 @@ export class SkillsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.DataService.getTasks().subscribe((Portfolio) => (
-      this.data = Portfolio.skills[0]
+    this.DataService.getData().subscribe((data) => (
+      this.skills = data.skills
     ));
     }
 

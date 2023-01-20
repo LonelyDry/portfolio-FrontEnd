@@ -19,8 +19,8 @@ export class EducationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.DataService.getTasks().subscribe((Portfolio) => (
-      this.data = Portfolio.education[0]
+    this.DataService.getData().subscribe((data) => (
+      this.data = data.education
     ));
 
   }
