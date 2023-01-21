@@ -1,5 +1,9 @@
-#fileInput {
-    display: none;
+img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    max-height: 35vh;
+
 }
 
 .btn-bg {
@@ -20,3 +24,11 @@
 .edit-btn-bg {
     background-color: #112D4E;
 }
+
+@media (max-width: 758px)  {
+    img {
+        max-height: 25vh;
+    }
+}
+
+

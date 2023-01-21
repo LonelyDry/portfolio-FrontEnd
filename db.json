@@ -1,6 +1,6 @@
 {
     "banner": {
-        "img": "./assets/img/Banner.jpg"
+        "img": "./assets/img/Banner1.jpg"
     },
     "profile": {
         "profilepic": "./assets/svg/user.svg",
@@ -99,5 +99,6 @@
                 "descripcion": "Descripcion del proyecto"
             }
         ]
-    }
+    },
+    "upload": {"files":"./assets/img/"}
 }

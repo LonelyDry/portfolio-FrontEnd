@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../../service/data.service'
 import { HttpClient } from '@angular/common/http';
+import { ImageUploadService } from 'src/app/service/image-upload.service';
 
 
 @Component({
@@ -11,14 +12,15 @@ import { HttpClient } from '@angular/common/http';
 export class BannerComponent implements OnInit {
 
   profile: any;
-  showInput: boolean = true;
+  showInput: boolean = false;
   url: string | null | ArrayBuffer = ''
   archivos: any = [];
 
 
   constructor(
     private DataService: DataService,
-    private http: HttpClient
+    private http: HttpClient,
+    private ImageUpload:ImageUploadService
   ) {
 
   }
@@ -32,6 +34,9 @@ export class BannerComponent implements OnInit {
   onEdit() {
     this.url = null
   }
+  onshowInput(){
+    this.showInput = !this.showInput
+  }
 
 
   onSelectedFile(imageInput: FileList | null) {
@@ -42,14 +47,14 @@ export class BannerComponent implements OnInit {
         let fileReader = event.target as FileReader
         this.url = fileReader.result;
       }
-      // this.archivos.push(archivo)
+      this.archivos.push(imageInput)
     }
 
   }
 
-  uploadFile(): any {
-    const formData = new FormData();
-
+  uploadFile(image:any) {
+    console.log("banner upload works")
+    this.ImageUpload.uploadFile(image)
   }
 
 }

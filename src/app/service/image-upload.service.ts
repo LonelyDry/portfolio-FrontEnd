@@ -14,18 +14,18 @@ const httpOptions = {
 })
 export class ImageUploadService {
 
-  private apiUrl = `http://localhost:5001/`
+  private apiUrl = `http://localhost:5001/upload`
 
   constructor(
     private http: HttpClient,
   ) { }
 
   uploadFile(image:any): any {
+    console.log("service upload works")
     const formData = new FormData();
-    formData.set('banner', image)
     formData.append('image', image)
 
-    return this.http.post(this.apiUrl, formData)
+    return this.http.post('http://localhost:5001/upload', formData, httpOptions)
 
   }
 }

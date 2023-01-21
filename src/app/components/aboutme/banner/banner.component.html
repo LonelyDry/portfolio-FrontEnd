@@ -1,19 +1,21 @@
 <div class="position-relative">
 
-    <img [src]=" url ? url : profile.img " alt="" class="img-fluid" width="100%" height="auto">
+    <img [src]=" url ? url : profile.img " alt="" class="img-fluid">
 
     <input 
             #fileInput  
             type="file" 
             accept="image/*" 
             (change)="onSelectedFile(fileInput.files)"
+            class="form-control mt-2"
+            *ngIf="showInput"
     >
 
     <!-- edition buttons -->
     <div class="position-absolute top-0 end-0 pt-2 pe-2 d-flex gap-2 ">
-        
+        <!-- onclick="document.getElementById('fileInput').click()" -->
         <button type="button" class="btn edit-btn-bg rounded-circle btn-text"
-            onclick="document.getElementById('fileInput').click()" *ngIf="!url">
+            (click)="onshowInput()">
             <i class="uil uil-pen"></i>
         </button>
 
@@ -21,7 +23,7 @@
             <i class="uil uil-trash-alt"></i>
         </button>
 
-        <button type="button" class="btn edit-btn-bg rounded-circle btn-text" (click)="uploadFile()" *ngIf="url">
+        <button type="button" class="btn edit-btn-bg rounded-circle btn-text" (click)="uploadFile('fileInput')" *ngIf="url">
             <i class="uil uil-save"></i>
         </button>
     </div>
